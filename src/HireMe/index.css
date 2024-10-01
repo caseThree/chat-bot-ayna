@@ -1,0 +1,102 @@
+.hire-me {
+    text-align: center;
+    padding: 20px;
+    color: #D3D3D3; 
+}
+
+.hire-me-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border: 2px solid #ffffff; 
+}
+
+.links, .contact {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.links a, .contact a {
+    margin: 10px 15px; 
+    text-decoration: none; 
+    color: #0099cc; 
+    font-size: 18px; 
+    display: flex;
+    align-items: center; 
+    transition: color 0.3s ease; 
+}
+
+.links a:hover, .contact a:hover {
+    color: #007a99; 
+}
+
+.links a svg, .contact a svg {
+    margin-right: 5px; 
+    font-size: 20px; 
+}
+
+.admin-link {
+    margin-top: 20px;
+}
+
+.toggle-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0099cc; 
+    border: none; 
+    color: #ffffff; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #007a99; 
+}
+
+.credentials {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.admin-panel-link {
+    color: #0099cc;
+}
+
+.admin-panel-link:hover {
+    text-decoration: underline;
+}
+
+.highlight-name {
+    color: #00BFFF; 
+    transition: color 0.3s ease; 
+    position: relative; 
+}
+
+.highlight-handle {
+    visibility: hidden; 
+    display: none;
+    color: #FF4500;
+    transition: visibility 0s, opacity 0.3s ease; 
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.highlight-name:hover {
+    display: none;
+    visibility: hidden; 
+    opacity: 0; 
+}
+
+.highlight-name:hover + .highlight-handle {
+    display: inline;
+    visibility: visible; 
+    opacity: 1;
+}
