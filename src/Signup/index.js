@@ -17,7 +17,7 @@ export function Signup() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/user/sign-up', { username, password });
+            const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/user/sign-up`, { username, password });
             toast.success('User created successfully!');
             setTimeout(() => handleToLogin(), 1500)
         } catch (error) {

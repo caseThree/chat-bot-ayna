@@ -13,7 +13,7 @@ export const SocketProvider = ({ user, children }) => {
     useEffect(() => {
         const token = user.access_token;
         console.log(`token: ${user.access_token}`)
-        socket.current = io('http://localhost:3000/socket', {
+        socket.current = io(`${process.env.REACT_APP_API_BASE_URL}/socket`, {
             extraHeaders: {
                 Authorization: `${token}`,
             },

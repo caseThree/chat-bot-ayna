@@ -73,15 +73,38 @@ input[type='text'] {
     background-color: #45a049;
 }
 
-.closeBtn {
+/* .closeBtn {
     border: none;
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: #e74c3c;
+    justify-content: center;
+    align-items: center;
 }
 
 .closeBtn:hover {
     background-color: #c0392b; 
+} */
+
+.closeBtn {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Use transparent to blend with the background */
+    color: white; /* Change icon color to white for better visibility */
+    font-size: 20px; /* Increase size of the icon *
+    border-radius: 50%; /* Make it round */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.closeBtn:hover {
+    transform: scale(1.1); /* Slightly scale up on hover for a nice effect */
+}
+
+.closeBtn:focus {
+    outline: none; /* Remove default focus outline */
 }

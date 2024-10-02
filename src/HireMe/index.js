@@ -55,9 +55,9 @@ export function HireMe() {
             </div>
 
             <div className="admin-link">
-                <button onClick={toggleCredentials} className="toggle-button">
+                <a href="https://drive.google.com/file/d/10L5MOwXkmx6h50IVg1R5gzDeGTzNnn4I/view?usp=sharing" className="toggle-button">
                     Resume
-                </button>
+                </a>
             </div>
         </div>
     );

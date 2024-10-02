@@ -24,7 +24,7 @@ export function Modal({ isOpen, setIsOpen, user }) {
     const handleCreateSession = async () => {
         if (newSession.trim()) {
             const response = await axios.post(
-                'http://localhost:3000/user/session',
+                `${process.env.REACT_APP_API_BASE_URL}/user/session`,
                 {
                     session: newSession.trim(),
                 },
@@ -45,7 +45,7 @@ export function Modal({ isOpen, setIsOpen, user }) {
         <>
         <div className='overlay' />
         <div className='modal'>
-        <button onClick={() => setIsOpen(false)} className="closeBtn close-button">
+        <button onClick={() => setIsOpen(false)} className="closeBtn">
                     <RiCloseLine />
                 </button>
                 

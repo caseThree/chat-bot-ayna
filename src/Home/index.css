@@ -85,6 +85,13 @@
     transition: background-color 0.3s;
 }
 
+@media (max-width: 600px) {
+    .session-button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Optional: adjust font size */
+    }
+}
+
 .session-button:hover {
     background-color: #e0a800;
 }

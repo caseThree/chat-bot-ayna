@@ -68,7 +68,7 @@ export function Home({user, setIsOpen}) {
                         className="message-input"
                     />
                     <button onClick={handleSend} className="send-button">Send</button>
-                    <button onClick={handleSessions} className="session-button">Sessions</button>
+                    <button onClick={handleSessions} className="session-button">📚</button>
                 </div>
             </div>
     );

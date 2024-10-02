@@ -10,11 +10,11 @@ export function Login({setUser}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/auth/login', { username, password });
+            const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/login`, { username, password });
             console.log(response)
             const { access_token } = response.data;
 
-            const sessions = await axios.get('http://localhost:3000/user/session', {
+            const sessions = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/user/session`, {
                 headers: {
                     Authorization: `Bearer ${access_token}`
                 }
